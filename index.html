@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width", initial-scale="1.0">
+        <title>Home Page</title>
+        <link rel="icon" type="image/x-icon" href="image/logo.png">
+        <link rel="stylesheet" href="style.css">
+    
+    </head>
+    <body>
+        <div class="navindex">
+            <a href="index.html"><b>Home</b></a>
+            <a href="aboutus.html"><b>About</b></a>
+            <a href="products.html"><b>Products</b></a>
+            <a href="members.html"><b>Members</b></a>
+        </div>
+
+        <div class="slideshow-container">
+    
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="image/welcome.jpg" style="width:100%; height: 90%;"> 
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="image/flavours.jpg" style="width:100%; height: 90%;"> 
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="image/favorite.jpg" style="width:100%; height: 90%;"> 
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="image/end.jpg" style="width:100%; height: 90%;"> 
+              </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span>
+              <span class="dot"></span>  
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 3 seconds
+            }
+            </script>
+
+        
+        <div class="box">
+            <div class="card">
+                <img src="image/menu.jpg" alt="products menu" class="center" style="width: 250px; height: 300px;">
+                <h5 style="text-align: center;">Our products</h5>
+                <div class="pra">
+                    <p>Pick your favourite Aiskrim Gemok from our selection of quality desserts and 
+                        homemade Aiskrim Gemok, we know you'll love it and keep coming back for more!</p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="products.html">Find out more</a>
+                        </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/logo.png" alt="about us" class="center" style="height: 300px; width: auto;">
+                <h5 style="text-align: center;">About us</h5>
+                <div class="pra">
+                    <p><strong>MSW Kitchen</strong> has provided your communities with some of the greatest-tasting, premium, reasonably priced ice creams. 
+                        That still holds true for us now as it did back then.</p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="aboutus.html">Find out more</a>
+                        </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/members.jpg" alt="member pic" class="center" style="height: 300px; width: auto;">
+                <h5 style="text-align: center;">Our members</h5>
+                <div class="pra">
+                    <p>These are the four members that is responsible for creating and managing this website for this company.</p>
+                       <p> <i>'The strength of the team is each individual members.'</i></p>
+                    </p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="members.html">Find out more</a>
+                        </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h4><i>This website is build for assignment IMD311 &copy : Madam Seri Intan Idayu Binti Shahrul Asari</i></h4>
+          </div>
+
+    </body>
+</html>

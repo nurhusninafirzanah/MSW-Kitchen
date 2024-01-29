@@ -1,0 +1,455 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-image: url('image/background.jpg');
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 133px;
+  text-align: center;
+  background-image: url('image/history.jpg');
+  background-repeat: no-repeat;
+  background-size: 1200px 300px;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar for index */
+.navindex {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f4acb7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+
+}
+
+/* Style the topnav links for index*/
+.navindex a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+/* Change color on hover for index*/
+.navindex a:hover {
+  background-color: #d8e2dc;
+  color: black;
+  border-radius: 12px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f4acb7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #d8e2dc;
+  color: black;
+  border-radius: 12px;
+}
+
+/* Starting for homepage */
+.slideshow-container{
+  max-width: 2000px;
+  max-height: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Products */
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.card{
+  height: 680px;
+  width: 450px;
+  padding: 40px 35px;
+  background: #aad9cd;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.card h5{
+  color: #0c0b0b;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.pra p{
+  color: black;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+.button{
+  background-color: #e9bbb5;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: .4s;
+}
+.button:hover{
+  background-color: transparent;
+  border: 2px solid #fc99e6;
+  cursor: pointer;
+}
+
+/* Start coding for about us */
+.cardhistory {
+  background-color: #ffe5d9;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+
+/* Deviding for vision, mission and motto background */
+.devideright {
+  background-color: #ffe5d9;
+  padding: 20px;
+  padding-bottom: 72px;
+  padding-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+
+.devidemid {
+  background-color: #ffe5d9;
+  padding: 20px;
+  padding-bottom: 45px;
+  padding-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+
+.devideleft {
+  background-color: #ffe5d9;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 130px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+
+/* Deviding for location and social media background */
+.devidelocation {
+  background-color: #ffe5d9;
+  padding: 20px;
+  padding-bottom: 170px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+
+.devidesocialmedia {
+  background-color: #ffe5d9;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create three equal columns that floats next to each other */
+.columnmid {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.columnright {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.columnleft {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.location {
+  float: left;
+  width: 50%;
+}
+
+.socialmedia {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+}
+
+/* Starting for our products page */
+.cardproduct {
+  background-color: #ffe5d9;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+  font-family:Verdana, 
+
+}
+
+div.gallery {
+  margin: 30px;
+  border: 1px solid #ccc;
+  background-color: #f4acb7;
+  float: left;
+  width: 170px;
+}
+
+div.gallery:hover {
+  border: 4px solid #f0d7dd;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Starting for Our Members page */
+.leftcolumn {   
+  float: left;
+  width: 65%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 35%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.chart {
+  background-color: #e8dff5;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+
+.card2 {
+  background-color: lightcyan;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+.card3 {
+  background-color: lightcyan;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+.card4 {
+  background-color: lightcyan;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+.card5 {
+  background-color: lightcyan;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #8da47e;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+
+.subfont{
+    font-family: "Yeseva One", sans-serif;
+    color: #000000;
+    line-height: 1.8;
+    text-align: justify;
+    
+}
+.subfont2{
+    font-family: "Single Day", sans-serif;
+    color: #000000;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .header, .navindex, .navindex a, .navindex a:hover, .container, .slide-1, .slide-2, .slide-3, .slide-4, .slide, .arrow, .arrow img,
+  .arrow:hover, .center, .box {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
